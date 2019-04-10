@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
-import {AppLight} from "./AppLight";
+import {appLight} from "./appLight";
 
-export function AppLights() {
+export function appLights() {
     const [lights, setLights] = useState([]);
 
     useEffect(() => {
@@ -10,5 +10,5 @@ export function AppLights() {
         }).then(lights => setLights(lights))
     }, []);
 
-    return <ul>{lights.map(light => <AppLight key={light.name} light={light}/>)}</ul>
+    return <ul>{lights.map(light => <appLight key={light.name} light={light}/>)}</ul>
 }

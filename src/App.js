@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
 import './App.css';
-import {AppTitle} from "./components/AppTitle";
-import {AppLights} from "./components/AppLights";
+import {appTitle} from "./components/appTitle";
+import {appLights} from "./components/appLights";
 
 class App extends Component {
   render() {
     return (
         <>
-          <AppTitle title="Light bridge controller" />
-          <AppLights/>
+          <appTitle title="Light bridge controller" />
+          <appLights/>
         </>
     );
   }
