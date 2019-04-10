@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {AppLight, Light} from "./AppLight";
+import {AppLight, Light} from "./app-light";
 
 export const AppLights = () => {
 

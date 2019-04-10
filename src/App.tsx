@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
-import {AppLights} from "./components/AppLights";
-import {AppTitle} from './components/AppTitle';
+import {AppLights} from "./components/app-lights";
+import {AppTitle} from './components/app-title';
 
 class App extends Component {
   render() {
