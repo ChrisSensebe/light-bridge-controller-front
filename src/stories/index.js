@@ -7,12 +7,10 @@ import {AppToggle} from "../components/app-toggle";
 const testLight = {name: 'light 1'};
 
 storiesOf('AppLight', module)
-    .add('light 1', () => <AppLight light={testLight}/>);
+  .add('light 1', () => <AppLight light={testLight}/>);
 
-const handleClick = (event => {
-    event.preventDefault();
-    console.log('clicked');
-});
+const handleClick = (event => console.log(`checked: ${event.target.checked}`));
 
 storiesOf('AppToggle', module)
-    .add('on', () => <AppToggle handleClick={handleClick}/>);
+  .add('unchecked', () => <AppToggle handleClick={handleClick} checked={false}/>)
+  .add('checked', () => <AppToggle handleClick={handleClick} checked={true}/>);
