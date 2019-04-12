@@ -16,16 +16,16 @@ const Checkbox = styled.input`
   width: 0;
   height: 0;
   :checked {
-    background-color: #2196F3;
+    background-color: #4CAF50;
   }
   :focus {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px #4CAF50;
   }
   &:checked + .slider {
-    background-color: #2196F3;
+    background-color: #4CAF50;
   }
   &:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px #4CAF50;
   }
   &:checked + .slider:before {
     -webkit-transform: translateX(26px);
