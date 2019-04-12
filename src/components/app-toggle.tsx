@@ -51,7 +51,7 @@ const Slider = styled.span`
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: white;
+    background-color: #444;
     -webkit-transition: .4s;
     transition: .4s;
   }`;
