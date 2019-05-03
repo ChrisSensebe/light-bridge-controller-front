@@ -4,9 +4,9 @@ import {storiesOf} from '@storybook/react';
 import {AppItem} from "../components/app-item";
 import {AppToggle} from "../components/app-toggle";
 import {AppSlider} from "../components/app-slider";
-import {ItemType} from "../models/item.type";
+import {Icon} from "../models/icon";
 
-const testLight = {name: 'light 1', type: ItemType.light};
+const testLight = {name: 'light 1', type: Icon.light};
 
 storiesOf('AppItem', module)
   .add('item 1', () => <AppItem item={testLight}/>);

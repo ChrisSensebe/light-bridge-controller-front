@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {AppItem} from "./app-item";
 import {Item} from '../models/item.interface';
-import {ItemType} from '../models/item.type';
+import {Icon} from '../models/icon';
 
 export const AppItems = () => {
 
@@ -10,9 +10,9 @@ export const AppItems = () => {
     useEffect(() => {
         const lightsPromise = new Promise<Item[]>(resolve => {
           setTimeout(() => resolve([
-            {name: 'light 1', type: ItemType.light},
-            {name: 'light 2', type: ItemType.light},
-            {name: 'light 3', type: ItemType.light}
+            {name: 'light 1', icon: Icon.light},
+            {name: 'light 2', icon: Icon.light},
+            {name: 'light 3', icon: Icon.light}
           ]), 500);
         });
         lightsPromise.then(lights => setLights(lights));
