@@ -1,14 +1,15 @@
 import React from 'react';
 
 import {storiesOf} from '@storybook/react';
-import {AppLight} from "../components/app-light";
+import {AppItem} from "../components/app-item";
 import {AppToggle} from "../components/app-toggle";
 import {AppSlider} from "../components/app-slider";
+import {ItemType} from "../models/item.type";
 
-const testLight = {name: 'light 1'};
+const testLight = {name: 'light 1', type: ItemType.light};
 
-storiesOf('AppLight', module)
-  .add('light 1', () => <AppLight light={testLight}/>);
+storiesOf('AppItem', module)
+  .add('item 1', () => <AppItem item={testLight}/>);
 
 const handleClick = (event => console.log(`checked: ${event.target.checked}`));
 

@@ -3,13 +3,10 @@ import {AppToggle} from './app-toggle';
 import {AppSlider} from './app-slider';
 import styled from 'styled-components';
 import {ReactComponent as Logo} from '../../public/icons/bulbsSultan.svg';
+import {Item} from '../models/item.interface';
 
-export interface Light {
-  name: string;
-}
-
-export interface AppLightProps {
-  light: Light;
+export interface AppItemProps {
+  item: Item;
 }
 
 const Li = styled.li`
@@ -36,7 +33,7 @@ const LightName = styled.div`
   margin-left: 20px;
 `;
 
-export const AppLight = (props: AppLightProps) => {
+export const AppItem = (props: AppItemProps) => {
 
   const [checked, toggleCheck] = useState(false);
   const [value, changeValue] = useState(0);
@@ -56,7 +53,7 @@ export const AppLight = (props: AppLightProps) => {
       <FlexContainer>
         <DivLightInfo>
           <Logo/>
-          <LightName>{props.light.name}</LightName>
+          <LightName>{props.item.name}</LightName>
         </DivLightInfo>
         <AppToggle handleClick={handleToggle} checked={checked}/>
       </FlexContainer>
