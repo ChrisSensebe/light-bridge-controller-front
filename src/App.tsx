@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
-import {AppLights} from "./components/app-lights";
+import {AppItems} from "./components/app-items";
 import {AppTitle} from './components/app-title';
 
 class App extends Component {
@@ -8,7 +8,7 @@ class App extends Component {
     return (
         <>
           <AppTitle title="Light bridge controller" />
-          <AppLights/>
+          <AppItems/>
         </>
     );
   }
