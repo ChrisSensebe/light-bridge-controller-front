@@ -26,4 +26,12 @@ export enum Icon {
   roomsOutdoor,
   roomsOutdoorSocialTime,
   roomsPool,
+  roomsPorch,
+  roomsRecreation,
+  roomsSocialTime,
+  roomsStaircase,
+  roomsStorage,
+  roomsStudio,
+  roomsTerrace,
+  roomsToilet,
 }
