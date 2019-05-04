@@ -2,8 +2,8 @@ import React, {useState} from 'react';
 import {AppToggle} from './app-toggle';
 import {AppSlider} from './app-slider';
 import styled from 'styled-components';
-import {ReactComponent as Logo} from '../../public/icons/bulbsSultan.svg';
 import {Item} from '../models/item.interface';
+import {AppIcon} from './app-icon';
 
 export interface AppItemProps {
   item: Item;
@@ -52,7 +52,7 @@ export const AppItem = (props: AppItemProps) => {
     <Li>
       <FlexContainer>
         <DivLightInfo>
-          <Logo/>
+          <AppIcon icon={props.item.icon}/>
           <LightName>{props.item.name}</LightName>
         </DivLightInfo>
         <AppToggle handleClick={handleToggle} checked={checked}/>

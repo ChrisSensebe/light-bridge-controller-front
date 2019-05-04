@@ -1,3 +1,4 @@
+import React from 'react';
 import {Icon} from '../models/icon';
 
 export interface AppiconProps {
@@ -5,5 +6,6 @@ export interface AppiconProps {
 }
 
 export const AppIcon = (props: AppiconProps) => {
-  return <svg><use href={props.icon}></use></svg>
+  const iconPath = process.env.PUBLIC_URL + props.icon;
+  return <img src={iconPath} alt={props.icon} />
 };
