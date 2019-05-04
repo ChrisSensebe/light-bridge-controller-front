@@ -10,9 +10,9 @@ export const AppItems = () => {
     useEffect(() => {
         const lightsPromise = new Promise<Item[]>(resolve => {
           setTimeout(() => resolve([
-            {name: 'light 1', icon: Icon.light},
-            {name: 'light 2', icon: Icon.light},
-            {name: 'light 3', icon: Icon.light}
+            {name: 'light 1', icon: Icon.bulbsSultan},
+            {name: 'light 2', icon: Icon.bulbsSultan},
+            {name: 'light 3', icon: Icon.bulbsSultan}
           ]), 500);
         });
         lightsPromise.then(lights => setLights(lights));

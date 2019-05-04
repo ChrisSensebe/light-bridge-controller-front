@@ -6,7 +6,7 @@ import {AppToggle} from "../components/app-toggle";
 import {AppSlider} from "../components/app-slider";
 import {Icon} from "../models/icon";
 
-const testLight = {name: 'light 1', type: Icon.light};
+const testLight = {name: 'light 1', type: Icon.bulbsSultan};
 
 storiesOf('AppItem', module)
   .add('item 1', () => <AppItem item={testLight}/>);

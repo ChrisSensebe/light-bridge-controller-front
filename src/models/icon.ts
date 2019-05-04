@@ -1,6 +1,6 @@
 export enum Icon {
-  light,
-  roomsAttic,
+  bulbsSultan = '/public/icons/bulbsSultan.svg',
+  /*roomsAttic,
   roomsBalcony,
   roomsBathRoom,
   roomsBedRoom,
@@ -33,5 +33,5 @@ export enum Icon {
   roomsStorage,
   roomsStudio,
   roomsTerrace,
-  roomsToilet,
+  roomsToilet,*/
 }
